@@ -29,19 +29,19 @@ class App < Sinatra::Base
     @number2 = params[:number2].to_i
     
     if(params[:operation] == "add")
-      "#{params[:number1].to_i + params[:number2].to_i}"
+      "#{@number1 + params[:number2].to_i}"
     end
     
     if(params[:operation] == "subtract")
-      "#{params[:number1].to_i - params[:number2].to_i}"
+      "#{@number1 - params[:number2].to_i}"
     end
     
     if(params[:operation] == "multiply")
-      "#{params[:number1].to_i * params[:number2].to_i}"
+      "#{@number1 * params[:number2].to_i}"
     end
     
     if(params[:operation] == "divide")
-      "#{params[:number1].to_i / params[:number2].to_i}"
+      "#{@number1 / params[:number2].to_i}"
     end
     
     
