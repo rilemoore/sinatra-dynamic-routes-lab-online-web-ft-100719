@@ -11,5 +11,9 @@ class App < Sinatra::Base
   get "/square/:number" do
     "#{params[:number].to_i * params[:number].to_i}"
   end
+  
+  get "/square/:number" do
+    "#{params[:number].to_i * params[:number].to_i}"
+  end
 
 end
