@@ -38,7 +38,7 @@ class App < Sinatra::Base
     end
     
     if(params[:operation] == "divide")
-      
+      "#{params[:number1].to_i / params[:number2].to_i}"
     end
     
     
