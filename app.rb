@@ -29,6 +29,18 @@ class App < Sinatra::Base
       
     end
     
+    if(params[:operation] == "subtract")
+      
+    end
+    
+    if(params[:operation] == "multiply")
+      
+    end
+    
+    if(params[:operation] == "divide")
+      
+    end
+    
     
   end
   
